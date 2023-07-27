@@ -3,6 +3,7 @@
   --black: #0e1014;
   --text-gradient: linear-gradient(#fcb045, #ff3f78);
   --btn-color: #4077f3;
+  --dark-gray: #656566;
 }
 
 html {
@@ -50,7 +51,7 @@ body {
   padding: 0;
 }
 
-.contacts {
+.header__contacts {
   display: flex;
   align-items: center;
   gap: 4.7rem;
@@ -165,4 +166,75 @@ body {
   font-weight: 500;
   border: none;
   padding: 0;
+}
+
+.footer {
+  margin-top: 12.4rem;
+}
+
+.footer-container {
+  display: flex;
+  font-size: 1.6rem;
+}
+
+.footer__heading {
+  color: var(--dark-gray);
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.07rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.about-list {
+  padding: 0;
+  margin: 0;
+  margin-right: 9.8rem;
+  list-style: none;
+}
+
+.about-list > li:first-child {
+  margin-bottom: 1rem;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  padding: 0;
+  margin: 0;
+  margin-right: 16.3rem;
+  list-style: none;
+}
+
+.menu-list > li:nth-child(even) {
+  margin-left: -1rem;
+}
+
+.footer__contacts {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.social-media-list--footer {
+  justify-content: end;
+  gap: 1rem;
+}
+
+.copyright {
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  margin-top: 3.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.privacy {
+  display: block;
+  color: var(--light-text);
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  text-decoration-line: underline;
 }
