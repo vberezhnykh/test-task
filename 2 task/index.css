@@ -6,6 +6,7 @@
   --dark-gray: #656566;
   --purple: #833ab4;
   --red: #961a1a;
+  --orange: #fcb045;
 }
 
 html {
@@ -26,6 +27,7 @@ body {
 .page-wrapper {
   max-width: 1140px;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
 .header {
@@ -53,6 +55,11 @@ body {
   padding: 0;
 }
 
+.navigation > ul > li:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+
 .header__contacts {
   display: flex;
   align-items: center;
@@ -64,6 +71,7 @@ body {
   padding: 0;
   display: flex;
   gap: 3rem;
+  cursor: pointer;
 }
 
 .header__heading {
@@ -217,6 +225,11 @@ body {
   padding: 0;
 }
 
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 @media (width <= 1140px) {
   .main {
     padding: 0 1.5rem;
@@ -329,6 +342,11 @@ body {
   margin-bottom: 1rem;
 }
 
+.about-list > li:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+
 .menu {
   margin-right: 9rem;
   flex-grow: 1;
@@ -342,6 +360,11 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.menu-list > li:hover {
+  cursor: pointer;
+  color: var(--orange);
 }
 
 .menu-list__item--mobile {
